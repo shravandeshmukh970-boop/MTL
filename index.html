@@ -3,9 +3,90 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>FUCK YOU</title>
+        <style>
+            body {
+                background-color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                overflow: hidden;
+            }
+
+            .container {
+                font-size: 10vw;
+                font-weight: bold;
+                text-transform: uppercase;
+                display: flex;
+                gap: 2vw;
+            }
+
+            .word {
+                display: flex;
+            }
+
+            .char {
+                animation: blink 0.5s infinite alternate;
+            }
+
+            /* Unique colors and slight animation delays for a chaotic blinking effect */
+            .char:nth-child(1) {
+                color: #ff0000;
+                animation-delay: 0s;
+            }
+            .char:nth-child(2) {
+                color: #00ff00;
+                animation-delay: 0.1s;
+            }
+            .char:nth-child(3) {
+                color: #0000ff;
+                animation-delay: 0.2s;
+            }
+            .char:nth-child(4) {
+                color: #ffff00;
+                animation-delay: 0.3s;
+            }
+
+            /* Reset delays for the second word characters */
+            .word:nth-child(2) .char:nth-child(1) {
+                color: #ff00ff;
+                animation-delay: 0.15s;
+            }
+            .word:nth-child(2) .char:nth-child(2) {
+                color: #00ffff;
+                animation-delay: 0.25s;
+            }
+            .word:nth-child(2) .char:nth-child(3) {
+                color: #ffa500;
+                animation-delay: 0.35s;
+            }
+
+            @keyframes blink {
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        </style>
     </head>
     <body>
-        Hello world
+        <div class="container">
+            <span class="word">
+                <span class="char">F</span>
+                <span class="char">u</span>
+                <span class="char">c</span>
+                <span class="char">k</span>
+            </span>
+            <span class="word">
+                <span class="char">Y</span>
+                <span class="char">o</span>
+                <span class="char">u</span>
+            </span>
+        </div>
     </body>
 </html>
