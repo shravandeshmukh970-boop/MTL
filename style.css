@@ -1,0 +1,43 @@
+@import 'color.css';
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+body{
+  margin: 0;
+  background-color: var(--tk-bg);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 30px;
+  background: var(--tk-bg-dark);
+}
+
+.left-menu{
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.right-menu{
+  display: flex;
+  margin: 0;
+  gap : 15px;
+  padding: 0;
+}
+
+.right-menu li {
+  list-style: none;
+}
+
+.right-menu li a {
+  text-decoration: none;
+  color: var(--tk-fg-dark);
+}
+
+#Clock{
+  color: var(--tk-magenta);
+}

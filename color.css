@@ -1,0 +1,22 @@
+:root {
+  /* Backgrounds */
+  --tk-bg: #1a1b26;         /* Main deep night background */
+  --tk-bg-dark: #16161e;    /* Darker panels, sidebars, footers */
+  --tk-bg-highlight: #292e42; /* Hover states, selected rows */
+  --tk-terminal-black: #414868; /* Subtle borders, grid lines */
+
+  /* Text & Typography */
+  --tk-fg: #c0caf5;         /* Primary text */
+  --tk-fg-dark: #a9b1d6;    /* Secondary text, descriptions */
+  --tk-comment: #565f89;    /* Muted text, captions, timestamps */
+
+  /* Neon Accent Palette */
+  --tk-red: #f7768e;        /* Destructive actions, errors, alerts */
+  --tk-orange: #ff9e3b;     /* Warnings, notifications, active status */
+  --tk-yellow: #e0af68;     /* Highlights, search matching matches */
+  --tk-green: #9ece6a;      /* Success states, badges, charts */
+  --tk-cyan: #7dcfff;       /* Tags, categories, links */
+  --tk-blue: #7aa2f7;       /* Main buttons, key actions, focus states */
+  --tk-magenta: #bb9af7;    /* Secondary accents, special highlights */
+}
+
