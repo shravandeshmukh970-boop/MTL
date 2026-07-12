@@ -3,8 +3,8 @@
 
 body {
     margin: 0;
-    background-color: var(--tk-bg);
-    font-family: "JetBrains Mono", ui-monospace, monospace;
+    background-color: var(--surface);
+    font-family: "FiraCode Nerd Font", monospace;
 }
 
 .navbar {
@@ -12,11 +12,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 9px 30px;
-    background: var(--tk-bg-dark);
+    background: var(--mantle);
+    border-bottom: 1px solid var(--border-lo);
 }
 
 .left-menu {
-    color: white;
+    color: var(--mauve);
     margin: 0;
     font-weight: bold;
     font-size: 18px;
@@ -35,9 +36,93 @@ body {
 
 .right-menu li a {
     text-decoration: none;
-    color: var(--tk-fg-dark);
+    color: var(--text);
 }
 
 #Clock {
-    color: var(--tk-magenta);
+    color: var(--subtext);
+}
+
+.window {
+    background-color: var(--surface);
+    border-radius: var(--radius);
+    margin-left: 10px;
+    position: relative;
+    border: 1px solid var(--border);
+}
+
+.window::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: var(--mauve);
+    filter: blur(25px);
+    opacity: 0;
+    z-index: -1;
+    border-radius: var(--radius);
+    transition: opacity 0.3s var(--ease);
+}
+
+.window:hover {
+    border-color: var(--mauve);
+}
+
+.window:hover::before {
+    opacity: 0.1;
+}
+
+.window.active::before {
+    opacity: 0.1;
+}
+
+.window.active {
+    border-color: var(--mauve);
+}
+
+.Heading {
+    background-color: var(--overlay);
+    width: 100%;
+    position: absolute;
+    height: 30px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.Heading div {
+    background-color: var(--mauve);
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#ASCII {
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    color: var(--subtext);
+}
+
+#ASCII h4 {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#ASCII-body {
+    flex: 1;
+    display: flex;
+    margin-top: 30px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+#ascii-art {
+    margin-left: -10pc;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 14px; /* shrink to fit — ASCII art is wide */
+    color: var(--green);
+    white-space: pre; /* preserve exact spacing/line breaks */
 }

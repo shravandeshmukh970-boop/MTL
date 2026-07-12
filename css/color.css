@@ -1,22 +1,21 @@
 :root {
-  /* Backgrounds */
-  --tk-bg: #1a1b26;         /* Main deep night background */
-  --tk-bg-dark: #16161e;    /* Darker panels, sidebars, footers */
-  --tk-bg-highlight: #292e42; /* Hover states, selected rows */
-  --tk-terminal-black: #414868; /* Subtle borders, grid lines */
-
-  /* Text & Typography */
-  --tk-fg: #c0caf5;         /* Primary text */
-  --tk-fg-dark: #a9b1d6;    /* Secondary text, descriptions */
-  --tk-comment: #565f89;    /* Muted text, captions, timestamps */
-
-  /* Neon Accent Palette */
-  --tk-red: #f7768e;        /* Destructive actions, errors, alerts */
-  --tk-orange: #ff9e3b;     /* Warnings, notifications, active status */
-  --tk-yellow: #e0af68;     /* Highlights, search matching matches */
-  --tk-green: #9ece6a;      /* Success states, badges, charts */
-  --tk-cyan: #7dcfff;       /* Tags, categories, links */
-  --tk-blue: #7aa2f7;       /* Main buttons, key actions, focus states */
-  --tk-magenta: #bb9af7;    /* Secondary accents, special highlights */
+    --base: #11111b;
+    --mantle: #181825;
+    --surface: #1e1e2e;
+    --overlay: #2a2a3c;
+    --border: #3b3b52;
+    --border-lo: #313244;
+    --text: #cdd6f4;
+    --subtext: #8a8fb0;
+    --muted: #63667f;
+    --mauve: #cba6f7;
+    --blue: #89b4fa;
+    --green: #a6e3a1;
+    --peach: #fab387;
+    --red: #f38ba8;
+    --yellow: #f9e2af;
+    --teal: #94e2d5;
+    --radius: 11px;
+    --gap: 14px;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
-
