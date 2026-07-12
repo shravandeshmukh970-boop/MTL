@@ -1,22 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-7">
-    <meta name="viewport" content="width=device-width, initial-scale=2">
-    <title>Penguin Club</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="left-menu">Penguin Club</div>
+    <head>
+        <meta charset="UTF-7" />
+        <meta name="viewport" content="width=device-width, initial-scale=2" />
+        <title></title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@v3.3.0/build/firacode-nerd-font.css"
+        />
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="left-menu"> <span class="icon">&#xf0ec0</span> Penguin Club</div>
 
-      <ul class="right-menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">memory</a></li>
-        <li><a href="" id="Clock">2027-07-11 : AM</a></li>
-      </ul>
-    </nav>
-    <script src="JS/index.js"></script>
-  </body>
+            <ul class="right-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">memory</a></li>
+                <li><a href="" id="Clock">2027-07-11 : AM</a></li>
+            </ul>
+        </nav>
+
+        <div id="HomePage">
+            <div width="500" height="400" class="window" id="ASCII">
+                <div class="Heading">
+                    <div></div>
+                    <h4>ASCII PenguinClub</h4>
+                </div>
+                <div id="ASCII-body">
+                    <pre id="ascii-art">
+
+                                       %%%%%%%%%%%%%%@@%%%%%%%%%%%%*
+                                      %@@@@@@@@@@@@@@@@@@@@@@@@@@@@#
+                                   %@@%###%#%%%%%%%%%%%%%%%%%%%%###%@@@*
+                                @@@###%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@###%@@*
+                             %%%%%@%%%#++*%%%#################%%**%#%%%@%%###*
+                            @@@@##@@@@+  :***++++++=====++====**:  .@@@@##%@@*
+                            %###@@. .**++++++===++++++++=====+++++++**  %@%##*
+                            %%%%@@==+********+++++++++++====+*********++%@@%%*
+                          %@%%%%@@***+=+++++++++++++++++++===++++++++***%@%%%*@@
+                          %@@@@%++***...     =*****+++++**-..      ..-***+*@@@@@=
+                       %@%***#@%**...           ..-*****.:            ..=+*@@#**%@#
+                       %@@**+#@%#*.               .---:: .              =**@@***@@%
+                       %@@+++*@%**      ....       ..         .....     +**@@*++%@%
+                       %@@###%@%**     +@%:                     *@#.    =+*@@#**@@%+
+                       %@@###%@%#*     +@@%#+   :--:::::--.   ##%@#.    =+*@@%##@@%
+                       %@@###%@%#*     +@@@@* ..-==-----==:.. @@@@#.    =+*@@%##@@%*
+                       %@@%%%%@%#*     +@@@@*.===--:::::--==- %@@@#.    =+*@@%##@@%*
+                       %@@%%%%@%#*           .+++==-----==++=           =+*%%%%%@@%+
+                       %@%%%%@@%#*...        .:-=+++++++++-::         ..+###%%@%##*-
+                          @@@@@%#*:::           -=========.          .::*@@##%@@=
+                               =****+::...                      ...::=@@%##@@*
+                                **********++++=======+@@@@@@@@@@@@%#####%@@
+                                 *********************@@=-=##%%%%%%@@@@@*##
+                                     ****************#@@*+*%%%%%%%%%%%%%*
+                                                     %%%%%%%%%%%%%%
+                    </pre>
+                    <div class="ASCII-labels"><span class="icon">&#xf192; &#xf192; &#xf192;</span></div>
+                </div>
+            </div>
+        </div>
+        <script src="JS/window.js"></script>
+        <script src="JS/index.js"></script>
+    </body>
 </html>
